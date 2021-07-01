@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Nuestra Pagina</title>
+</head>
+<body>
+    <div class="nav" style="background-color: darkgoldenrod;">
+        <div class="container">
+            <div class="row">
+                <div class="q" class="col-md-3">
+                    <img src="../img/PicsArt_06-28-08.41.41.png" width="250px">
+                    Cine
+                    <select name="cine">
+                        <option value="cti">Citicinemas</option>
+                        <option value="cinem">Cinemex</option>
+                        <option value="cinepo">Cinepolis</option>
+                    </select>
+                    Ubicación:
+                    <select name="Citi">
+                        <option value="citi">Blvd. Gral. Pedro Verona Rodríguez Triana 1950, La Merced 2, 27276 Torreón
+                            Coah.
+                        </option>
+                        <option value="cinem">Carr.Torreón-Matmoros 5000, Provitec, 27270 Torreón, Coah.</option>
+                        <option value="cinem">Calz José Vasconcelos 1955, Residencial Tenconológico, 27276 Torreoón, 
+                            Coah.
+                        </option>
+                        <option value="cinepo">Blvrd Independencia 1300, Navarro, 27010 Torreón, Coah.</option>
+                        <option value="cinepo">Periferico Raul Lopez Sanchez, Sin Nombre de Col 11,27018 Torreón, Coah.</option>
+                    </select>
+                    <button type="button" class="btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#MyModal">Registrar</button>
+                    <button type="button" class="btn-outline-warning btn-lg" data-bs-toggle="modal" data-bs-target="#Modal">Iniciar Sesión</button>
+                    <div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                             <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Registrar Usuario</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <label class="form-label" for="nombre">Nombre</label>
+                                        <input class="form-control" type="text" name="nombre" placeholder="Escribe tu nombre">
+                                        <label class="form-label" for="Apaterno">Usuario</label>
+                                        <input class="form-control" type="text" name="Usuario" placeholder="Escribe tu Usuario">
+                                        <label class="form-label" for="correo">Correo</label>
+                                        <input class="form-control" type="email" name="correo" placeholder="Escribe tu correo">
+                                        <label class="form-label" for="Contraseña">Contraseña</label>
+                                        <input class="form-control" type="password" name="pas" placeholder="Escribe tu contraseña">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                             <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <label class="form-label" for="Apaterno">Usuario</label>
+                                        <input class="form-control" type="text" name="Usuario" placeholder="Escribe tu Usuario">
+                                        <label class="form-label" for="Contraseña">Contraseña</label>
+                                        <input class="form-control" type="password" name="pas" placeholder="Escribe tu contraseña">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Continuar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="../bootstrap/js/bootstrap.min.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
